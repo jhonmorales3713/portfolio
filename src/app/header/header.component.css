@@ -1,0 +1,62 @@
+.bg-main-color {
+    background-color: #0DB75F;
+}
+#menus ul li:hover,#menus ul li:active,.nav-menu:hover,.nav-menu:active {
+    text-shadow: 1px;
+    color:#0DB75F;
+    transition: ease-in-out .1s;
+    cursor: pointer;
+}
+.nav-menu:hover div{
+    height: 2px;
+    background-color: #0DB75F;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+/* .arrow-up {
+    width: 0; 
+    height: 0;
+    margin-top:-9px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #0DB75F;
+    border-left: 10px solid transparent;
+} */
+ @media screen and (min-width:600px), screen and (max-width:768px) {
+    /* .hidden-md {
+        display: block;
+    }
+    .visible-md {
+        display: none !important;
+    } */
+
+}
+/* @media screen and (max-width:600px) {
+    .arrow-up {
+        margin-left: 95%;
+    }
+} */
+@media screen and (min-width:768px) {
+    /* .hidden-md {
+        display: none !important;
+    }
+    .visible-md {
+        display: flex !important;
+    } */
+}
+.nav-menu {
+    display:inline-block;
+    text-align: center;
+}
+.nav-menu :nth-child(1) {
+    padding-left: 10px;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-5px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}

@@ -1,0 +1,46 @@
+<header>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-6">
+                <span class=" font-bold">Jhon Morales/></span>
+            </div>
+            <!-- <div class="col-6 d-flex justify-content-end hidden-md" (click)="toggleMenu()">
+                <div class="hamburger-menu background-default" #menu>
+                    <span class="bg-main-color p-1">
+                        <i class="fa fa-bars text-white"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 bg-white hidden-md" #menus>
+                <div class="arrow arrow-up d-flex justify-content-end"></div>
+                <div class="bg-main-color menus" id="menus">
+                    <ul>
+                        <li class="text-center p-1 text-white">About Me</li>
+                        <li class="text-center p-1 text-white">Projects</li>
+                        <li class="text-center p-1 text-white">Contact</li>
+                    </ul>
+                </div>  
+            </div> -->
+            <div class="col-12 col-md-6 d-flex " [ngClass]="isMobileScreenMode ? 'justify-content-center' :'justify-content-end'">
+                <ul>
+                    <li class="nav-menu pl-sm pr-md">
+                        Home
+                        <div></div>
+                    </li>
+                    <li class="nav-menu pl-sm pr-md">
+                        About
+                        <div></div>
+                    </li>
+                    <li class="nav-menu pl-sm pr-md">
+                        Projects
+                        <div></div>
+                    </li>
+                    <li class="nav-menu pr-sm">
+                        Contact Me
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
